@@ -1,10 +1,8 @@
 spring:
   datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.1.148:3306/fornecedor?useTimezone=true&serverTimezone=America/Sao_Paulo
-    username: remote
     password: 12345
+    username: remote
+    url: jdbc:mysql://192.168.1.148:3306/fornecedor?useTimezone=true&serverTimezone=America/Sao_Paulo
   jpa:
-    hibernate.ddl-auto: update
-    generate-ddl: true
-    show-sql: true
+    hibernate:
+      ddl-auto: update
